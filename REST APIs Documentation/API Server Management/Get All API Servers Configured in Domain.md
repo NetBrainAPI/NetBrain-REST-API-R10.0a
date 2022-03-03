@@ -1,10 +1,10 @@
 
 # API Server Management
 
-## ***GET*** /v1/CMDB/APIServers
+## ***GET*** /V1/CMDB/APIServers
 Use this function returns all API servers configured in the domain. The user who making this API call need to have domain access along with "Manage Network Settings" Permission. The API will not return API server password and any encrypted content if user configured in extraParams.
 
-**Note** : By using this API, the latest patch is required 
+> **Note** : The latest patch is required on NetBrain 10.0a version
 
 ## Detail Information
 
@@ -12,7 +12,7 @@ Use this function returns all API servers configured in the domain. The user who
 
 > **Version** : 03/03/2022.
 
-> **API Server URL** : http(s):// IP address of your NetBrain Web API Server /ServicesAPI/API/v1/CMDB/APIServers
+> **API Server URL** : http(s):// IP address of your NetBrain Web API Server /ServicesAPI/API/V1/CMDB/APIServers
 
 > **Authentication** : 
 
@@ -51,16 +51,15 @@ Use this function returns all API servers configured in the domain. The user who
 |id| string | The API Server ID.  |
 |serverName| string | The API Server name. |
 |desc| string | The API Server description.  |
-|apiSourceType| string | The API Server Source Type or API Adapter name. |
-|endpoint| string | The third-party API service address. |
-|username| string | The user name to access the third-party API server. |
+|apiSourceType| string | The API Adapter name. |
+|endpoint| string | The connected third-party service address. |
+|username| string | The user name to access the third-party server. |
 |frontserverAndGroupName| string | Front Server or Front Server Group name to connect to the third-party API server. |
 |fsInfo| string | Front Server detail information. |
 |deviceCounts| string | Total number of devices assigned to this API server. |
 |password| NULL | NULL. |
 
 > ***Example***
-
 
 ```python
 {
@@ -70,10 +69,10 @@ Use this function returns all API servers configured in the domain. The user who
             "serverName": "NetBrain ServiceNow Lab",
             "desc": "This is NetBrain ServiceNow Lab 1750 environment",
             "apiSourceType": "ServiceNow API Adapter",
-            "endpoint": "https://ven01750.service-now.com",
+            "endpoint": "https://dev01750.service-now.com",
             "username": "admin",
             "frontserverAndGroupName": "WIN-AAVF2I6EUIE",
-            "fsInfo": "testFS(192.168.28.44)",
+            "fsInfo": "testFS(192.168.28.123)",
             "deviceCounts": 0,
             "password": null,
             "extraParams": [],
