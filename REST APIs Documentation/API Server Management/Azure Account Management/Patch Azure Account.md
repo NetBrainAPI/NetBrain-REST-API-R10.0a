@@ -3,6 +3,7 @@
 
 ## ***PATCH*** /V1/CMDB/ApiServers/AzureAccounts
 Using this API call to update parameters for an Azure account in API Server Manager.
+> **Note** : Please install Netbrain latest patch to make this API available.
 
 ## Detail Information
 

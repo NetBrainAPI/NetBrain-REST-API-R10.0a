@@ -3,6 +3,7 @@
 
 ## ***GET*** /V1/CMDB/ApiServers/AzureAccounts
 Using this API call to get Azure accounts in API Server Manager. The encrypted field are not returned.
+> **Note** : Please install Netbrain latest patch to make this API available.
 
 ## Detail Information
 
